@@ -1,3 +1,3 @@
 #!/bin/bash
 
-aws sync --exclude "README.md" --exclude "scripts/*" --acl public-read --delete . s3://2ndupminsterscouts.org.uk
+aws s3 sync --exclude "README.md" --exclude "scripts/*" --exclude ".git/*" --acl public-read --delete . s3://2ndupminsterscouts.org.uk
