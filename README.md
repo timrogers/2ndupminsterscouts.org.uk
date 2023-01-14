@@ -4,12 +4,12 @@ This repository contains the website for the 2nd Upminster Scout Group, located 
 
 # Running locally
 
-To test the site locally during development, just run `scripts/server`.
+To test the site locally during development, just run `scripts/server` and then go to `http://localhost:3000`.
 
 You must have Python 3 installed, available as the executable `python` in your path.
 
 # Deploying
 
-To deploy the version of the site that you have locally, run `scripts/deploy`. This README and the `scripts` directory will be automatically excluded.
+Changes will automatically deployed to Azure Static Apps when changes are pushed/merged to `main`.
 
-You must have the `aws` CLI installed and available in your path, and it must be configured with access to the `2ndupminsterscouts.org.uk` bucket.
+When a PR is created, a preview link will be generated automatically by Azure Static Apps, and a link will be added to the pull request.
