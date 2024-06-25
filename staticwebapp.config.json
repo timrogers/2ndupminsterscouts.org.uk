@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "route": "/agm-2024-minutes",
+      "rewrite": "/assets/agm-2024-minutes.pdf"
+    },
+    {
+      "route": "/agm-2024-previous-minutes",
+      "rewrite": "/assets/agm-2024-previous-minutes.pdf"
+    },
+    {
+      "route": "/agm-2024-constitution",
+      "rewrite": "/assets/agm-2024-constitution.pdf"
+    },
+    {
+      "route": "/agm-2024-annual-report",
+      "rewrite": "/assets/agm-2024-annual-report.pdf"
+    }
+  ]
+}
