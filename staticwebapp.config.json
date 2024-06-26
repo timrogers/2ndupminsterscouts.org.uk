@@ -1,8 +1,8 @@
 {
   "routes": [
     {
-      "route": "/agm-2024-minutes",
-      "rewrite": "/assets/agm-2024-minutes.pdf"
+      "route": "/agm-2024-agenda",
+      "rewrite": "/assets/agm-2024-agenda.pdf"
     },
     {
       "route": "/agm-2024-previous-minutes",
