@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>2nd Upminster Scout Group - Contact Us</title>
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <meta name="keywords" content="upminster, scouts, 2nd upminster, st laurence, essex, hornchurch, cranham, beavers, cubs, scouts">
 <meta name="description" content="The website of the 2nd Upminster Scout Group, based at St Laurence's Church in Upminster, Essex">
@@ -16,6 +17,13 @@
 <script type="text/javascript">
 	Cufon.replace('h1');
 	Cufon.replace('h2');
+	
+	function toggleMobileNav() {
+		const mobileNav = document.getElementById('mobileNav');
+		const body = document.body;
+		mobileNav.classList.toggle('active');
+		body.classList.toggle('menu-open');
+	}
 
 	$(document).ready(function() {
 		$("a.lightbox").fancybox({
@@ -40,10 +48,42 @@
 
 <body>
 <div id="container">
-  <h1 class="top">2ND UPMINSTER<img src="images/scouts.gif" style="margin-left: 225px;" /></h1>
-  <h1 class="sgroup">SCOUT GROUP</h1>
+  <!-- Desktop Header -->
+  <div class="header-container">
+    <div class="title-section">
+      <h1 class="top">2ND UPMINSTER</h1>
+      <h1 class="sgroup">SCOUT GROUP</h1>
+    </div>
+    <div class="logo-section">
+      <img src="images/scouts.png" alt="Scout Logo" class="scout-logo" />
+    </div>
+  </div>
 
-  <img src="images/banner2.png" alt="2nd Upminster Scout Group" style="margin: 0; padding: 0;" />
+  <!-- Mobile Header -->
+  <div class="mobile-header">
+    <div class="mobile-title-section">
+      <img src="images/scouts.png" alt="Scout Logo" class="mobile-logo" />
+      <h1 class="mobile-title">2nd Upminster Scouts</h1>
+    </div>
+    <button class="hamburger-menu" onclick="toggleMobileNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-menu" onclick="toggleMobileNav()">&times;</button>
+    <a href="index.html" onclick="toggleMobileNav()">Home</a>
+    <a href="scouting.html" onclick="toggleMobileNav()">Scouting</a>
+    <a href="uniform.html" onclick="toggleMobileNav()">Uniform</a>
+    <a href="churchparades.html" onclick="toggleMobileNav()">Church Parades</a>
+    <a href="group.html" onclick="toggleMobileNav()">Group Organisation</a>
+    <a href="contact.html" onclick="toggleMobileNav()">Contact Us</a>
+  </div>
+
+  <img src="images/banner2.png" alt="2nd Upminster Scout Group" class="banner-image" />
 
 
 
