@@ -1,105 +1,120 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>2nd Upminster Scout Group - Cubs</title>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<meta name="keywords" content="upminster, scouts, 2nd upminster, st laurence, essex, hornchurch, cranham, beavers, cubs, scouts"> 
-<meta name="description" content="The website of the 2nd Upminster Scout Group, based at St Laurence's Church in Upminster, Essex"> 
-<script type="text/javascript" src="cufon-yui.js"></script>
-<script type="text/javascript" src="ChunkFive_400.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('h1');
-	Cufon.replace('h2');
-	
-	function toggleMobileNav() {
-		const mobileNav = document.getElementById('mobileNav');
-		const body = document.body;
-		mobileNav.classList.toggle('active');
-		body.classList.toggle('menu-open');
-	}
-</script>
-<script type="text/javascript">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2nd Upminster Scout Group - Cubs</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="keywords"
+    content="upminster, scouts, 2nd upminster, st laurence, essex, hornchurch, cranham, beavers, cubs, scouts">
+  <meta name="description"
+    content="The website of the 2nd Upminster Scout Group, based at St Laurence's Church in Upminster, Essex">
+  <script type="text/javascript" src="cufon-yui.js"></script>
+  <script type="text/javascript" src="ChunkFive_400.font.js"></script>
+  <script type="text/javascript">
+    Cufon.replace('h1');
+    Cufon.replace('h2');
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-185993-9']);
-  _gaq.push(['_trackPageview']);
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobileNav');
+      const body = document.body;
+      mobileNav.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    }
+  </script>
+  <script type="text/javascript">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-185993-9']);
+    _gaq.push(['_trackPageview']);
 
-</script>
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </head>
 
 <body>
-<div id="container">
-  <!-- Desktop Header -->
-  <div class="header-container">
-    <div class="title-section">
-      <h1 class="top">2ND UPMINSTER</h1>
-      <h1 class="sgroup">SCOUT GROUP</h1>
+  <div id="container">
+    <!-- Desktop Header -->
+    <div class="header-container">
+      <div class="title-section">
+        <h1 class="top">2ND UPMINSTER</h1>
+        <h1 class="sgroup">SCOUT GROUP</h1>
+      </div>
+      <div class="logo-section">
+        <img src="images/scouts.png" alt="Scout Logo" class="scout-logo" />
+      </div>
     </div>
-    <div class="logo-section">
-      <img src="images/scouts.png" alt="Scout Logo" class="scout-logo" />
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+      <div class="mobile-title-section">
+        <img src="images/scouts.png" alt="Scout Logo" class="mobile-logo" />
+        <h1 class="mobile-title">2nd Upminster Scouts</h1>
+      </div>
+      <button class="hamburger-menu" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="close-menu" onclick="toggleMobileNav()">&times;</button>
+      <a href="index.html" onclick="toggleMobileNav()">Home</a>
+      <a href="scouting.html" onclick="toggleMobileNav()">Scouting</a>
+      <a href="uniform.html" onclick="toggleMobileNav()">Uniform</a>
+      <a href="churchparades.html" onclick="toggleMobileNav()">Church Parades</a>
+      <a href="group.html" onclick="toggleMobileNav()">Group Organisation</a>
+      <a href="contact.html" onclick="toggleMobileNav()">Contact Us</a>
+    </div>
+
+    <img src="images/cubs-masthead.jpg" alt="2nd Upminster Scout Group" class="banner-image" />
+
+
+
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="scouting.html">Scouting</a></li>
+      <li><a href="uniform.html">Uniform</a></li>
+      <li><a href="churchparades.html">Church Parades</a></li>
+      <li><a href="group.html">Group Organisation</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div id="content">
+      <h2>CUBS</h2>
+      <p><img src="images/cubs-logo.png" alt="Cubs" width="152" align="left">Cubs is the second section of the Scouting
+        movement, originally started in 1916 for younger brothers who wanted a 'look-in'. In nearly a century, the
+        section has constantly evolved and adapted its programme and methods to meet the changing needs of each
+        generation of young people.<br /><br /> During their time in the Pack, Cub Scouts will get a chance to try lots
+        of different activities like camping, cooking, exploring, collecting and they also get to go on trips and days
+        out.<br /><br />
+      <p><b><u>The Cub Scout Promise</u></b></p><br />
+      <i>
+        <p>I promise that I will do my best<br>
+          To do my duty to God and to the Queen<br>
+          To help other people <br>
+          And to keep the Cub Scout Law.</p>
+      </i><br />
+      <p><b><u>The Cub Scout Law</u></b></p><br />
+      <i>
+        <p>Cub Scouts always do their best <br>
+          Think of others before themselves <br>
+          And do a good turn every day.</p>
+      </i><br /><br />
+      <center>
+        <p><img src="images/cubflag.png" width="211" height="144" alt="Cub Scout Flag"></p>
+      </center>
     </div>
   </div>
-
-  <!-- Mobile Header -->
-  <div class="mobile-header">
-    <div class="mobile-title-section">
-      <img src="images/scouts.png" alt="Scout Logo" class="mobile-logo" />
-      <h1 class="mobile-title">2nd Upminster Scouts</h1>
-    </div>
-    <button class="hamburger-menu" onclick="toggleMobileNav()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-
-  <!-- Mobile Navigation -->
-  <div class="mobile-nav" id="mobileNav">
-    <button class="close-menu" onclick="toggleMobileNav()">&times;</button>
-    <a href="index.html" onclick="toggleMobileNav()">Home</a>
-    <a href="scouting.html" onclick="toggleMobileNav()">Scouting</a>
-    <a href="uniform.html" onclick="toggleMobileNav()">Uniform</a>
-    <a href="churchparades.html" onclick="toggleMobileNav()">Church Parades</a>
-    <a href="group.html" onclick="toggleMobileNav()">Group Organisation</a>
-    <a href="contact.html" onclick="toggleMobileNav()">Contact Us</a>
-  </div>
-
-  <img src="images/cubs-masthead.jpg" alt="2nd Upminster Scout Group" class="banner-image" />
-  
-  
-  
-<ul id="nav">
-	<li><a href="index.html">Home</a></li>
-	<li><a href="scouting.html">Scouting</a></li>
-    <li><a href="uniform.html">Uniform</a></li>
-         <li><a href="churchparades.html">Church Parades</a></li>
-    <li><a href="group.html">Group Organisation</a></li>
-	<li><a href="contact.html">Contact Us</a></li>
-</ul>
-<div id="content">
-	<h2>CUBS</h2>
-    <p><img src="images/cubs.jpg" alt="Cubs" width="152" height="90" align="left">Cubs is the second section of the Scouting  movement, originally started in 1916 for younger brothers who wanted a  'look-in'. In nearly a century, the section has constantly evolved and adapted  its programme and methods to meet the changing needs of each generation of  young people.<br /><br /> During their time in the Pack, Cub Scouts will get a chance to try  lots of different activities like camping, cooking, exploring, collecting and  they also get to go on trips and days out.<br /><br />
-    <p><b><u>The Cub Scout Promise</u></b></p><br />
-   <i><p>I promise that I will do my best<br>
-      To do my duty to God and to the Queen<br>
-      To help other people <br>
-    And to keep the Cub Scout Law.</p></i><br />
-    <p><b><u>The Cub Scout Law</u></b></p><br />
-   <i> <p>Cub Scouts always do their best <br>
-      Think of others before themselves <br>
-    And do a good turn every day.</p></i><br /><br />
-   <center><p><img src="images/cubflag.png" width="211" height="144" alt="Cub Scout Flag"></p></center>
-</div>
-</div>
 
 </body>
+
 </html>
