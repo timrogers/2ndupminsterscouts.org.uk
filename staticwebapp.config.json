@@ -15,6 +15,22 @@
     {
       "route": "/agm-2024-annual-report",
       "rewrite": "/assets/agm-2024-annual-report.pdf"
+    },
+    {
+      "route": "/agm-2026-agenda",
+      "rewrite": "/assets/agm-2026-agenda.pdf"
+    },
+    {
+      "route": "/agm-2026-previous-minutes",
+      "rewrite": "/assets/agm-2026-previous-minutes.pdf"
+    },
+    {
+      "route": "/agm-2026-constitution",
+      "rewrite": "/assets/agm-2026-constitution.pdf"
+    },
+    {
+      "route": "/agm-2026-annual-report",
+      "rewrite": "/assets/agm-2026-annual-report.pdf"
     }
   ]
 }
