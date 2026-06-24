@@ -1,65 +1,119 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>2nd Upminster Scout Group</title>
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<meta name="keywords" content="upminster, scouts, 2nd upminster, st laurence, essex, hornchurch, cranham, beavers, cubs, scouts" />
-<meta name="description" content="The website of the 2nd Upminster Scout Group, based at St Laurence Church in Upminster, Essex" />
-<script type="text/javascript" src="cufon-yui.js"></script>
-<script type="text/javascript" src="ChunkFive_400.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('h1');
-	Cufon.replace('h2');
-</script>
-<script type="text/javascript">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2nd Upminster Scout Group</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="keywords"
+    content="upminster, scouts, 2nd upminster, st laurence, essex, hornchurch, cranham, beavers, cubs, scouts" />
+  <meta name="description"
+    content="The website of the 2nd Upminster Scout Group, based at St Laurence Church in Upminster, Essex" />
+  <script type="text/javascript" src="cufon-yui.js"></script>
+  <script type="text/javascript" src="ChunkFive_400.font.js"></script>
+  <script type="text/javascript">
+    Cufon.replace('h1');
+    Cufon.replace('h2');
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-185993-9']);
-  _gaq.push(['_trackPageview']);
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobileNav');
+      const body = document.body;
+      mobileNav.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    }
+  </script>
+  <script type="text/javascript">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-185993-9']);
+    _gaq.push(['_trackPageview']);
 
-</script>
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </head>
 
 <body>
-<div id="container">
-  <h1 class="top">2ND UPMINSTER<img src="images/scouts.gif" style="margin-left: 225px;" /></h1>
-   	<h1 class="sgroup">SCOUT GROUP</h1>
+  <div id="container">
+    <!-- Desktop Header -->
+    <div class="header-container">
+      <div class="title-section">
+        <h1 class="top">2ND UPMINSTER</h1>
+        <h1 class="sgroup">SCOUT GROUP</h1>
+      </div>
+      <div class="logo-section">
+        <img src="images/scouts.png" alt="Scout Logo" class="scout-logo" />
+      </div>
+    </div>
 
-  <img src="images/banner2.png" alt="2nd Upminster Scout Group" style="margin: 0; padding: 0;" />
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+      <div class="mobile-title-section">
+        <img src="images/scouts.png" alt="Scout Logo" class="mobile-logo" />
+        <h1 class="mobile-title">2nd Upminster Scouts</h1>
+      </div>
+      <button class="hamburger-menu" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="close-menu" onclick="toggleMobileNav()">&times;</button>
+      <a href="index.html" onclick="toggleMobileNav()">Home</a>
+      <a href="scouting.html" onclick="toggleMobileNav()">Scouting</a>
+      <a href="uniform.html" onclick="toggleMobileNav()">Uniform</a>
+      <a href="churchparades.html" onclick="toggleMobileNav()">Church Parades</a>
+      <a href="group.html" onclick="toggleMobileNav()">Group Organisation</a>
+      <a href="contact.html" onclick="toggleMobileNav()">Contact Us</a>
+    </div>
+
+    <img src="images/banner2.png" alt="2nd Upminster Scout Group" class="banner-image" />
 
 
-<ul id="nav">
-	<li><a href="index.html">Home</a></li>
-	<li><a href="scouting.html">Scouting</a></li>
-    <li><a href="uniform.html">Uniform</a></li>
-         <li><a href="churchparades.html">Church Parades</a></li>
-    <li><a href="group.html">Group Organisation</a></li>
-	<li><a href="contact.html">Contact Us</a></li>
-</ul>
-<div id="content">
-	<h2>WELCOME</h2>
-Welcome to the website of the 2nd Upminster Scout Group.
-We are a church-affiliated Scout Group based at St Laurence Church in Upminster, Essex and are one of 18 Scout Groups belonging to Hornchurch District Scout Association.  Our Scout Group has three sections - Beavers, Cubs and Scouts – which together provide weekly Scouting activities for young people between the ages of six and fourteen.<br /><br />
-The Scouting formula is simple: using volunteer adult leaders and basic facilities, Scouting helps young people from all backgrounds to develop universally valued qualities of trust, empathy, confidence, integrity and a spirit of adventure. Life skills are learned to help young people become tomorrow's happiest, healthiest and most productive citizens, some of whom will be tomorrow's leaders.<br /><br />
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="scouting.html">Scouting</a></li>
+      <li><a href="uniform.html">Uniform</a></li>
+      <li><a href="churchparades.html">Church Parades</a></li>
+      <li><a href="group.html">Group Organisation</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div id="content">
+      <h2>WELCOME</h2>
+      Welcome to the website of the 2nd Upminster Scout Group.
+      We are a church-affiliated Scout Group based at St Laurence Church in Upminster, Essex and are one of 18 Scout
+      Groups belonging to Hornchurch District Scout Association. Our Scout Group has three sections - Beavers, Cubs and
+      Scouts – which together provide weekly Scouting activities for young people between the ages of six and
+      fourteen.<br /><br />
+      The Scouting formula is simple: using volunteer adult leaders and basic facilities, Scouting helps young people
+      from all backgrounds to develop universally valued qualities of trust, empathy, confidence, integrity and a spirit
+      of adventure. Life skills are learned to help young people become tomorrow's happiest, healthiest and most
+      productive citizens, some of whom will be tomorrow's leaders.<br /><br />
 
-Click <a href="/downloads/information_for_parents_and_carers.pdf">here</a> to download our welcome letter, containing helpful information for parents and carers.<br /><br />
+      Click <a href="/downloads/information_for_parents_and_carers.pdf">here</a> to download our welcome letter,
+      containing helpful information for parents and carers.<br /><br />
 
 
-Click on the logos below to find out more about each section, or use the menu above for information about our Group and Scouting in general.  We hope to see you soon.<br /><br />
-  <a href="beavers.html"><img src="images/beavers.jpg" width="180" height="86" alt="Beavers" align="middle" style="margin-left: 25px;" /></a>
-  <a href="cubs.html"><img src="images/cubs.jpg" width="152" height="90" alt="Cubs" align="middle" /></a>
-  <a href="scouts.html"><img src="images/scouts.jpg" width="165" height="78" alt="Scouts" align="middle" /></a><br />
+      Click on the logos below to find out more about each section, or use the menu above for information about our
+      Group and Scouting in general. We hope to see you soon.<br /><br />
+      <div class="section-images">
+        <a href="beavers.html"><img src="images/beavers-logo.png" width="180" alt="Beavers" /></a>
+        <a href="cubs.html"><img src="images/cubs-logo.png" width="152" alt="Cubs" /></a>
+        <a href="scouts.html"><img src="images/scouts-logo.png" width="165" alt="Scouts" /></a>
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 
 </body>
+
 </html>
